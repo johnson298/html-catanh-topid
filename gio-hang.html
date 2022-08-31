@@ -1,0 +1,346 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link media="all" type="text/css" rel="stylesheet"
+          href="https://hocbanglaixe247.com/vendor/core/plugins/cookie-consent/css/cookie-consent.css?v=1.0.0">
+    <link media="all" type="text/css" rel="stylesheet"
+          href="https://hocbanglaixe247.com/themes/farmart/plugins/bootstrap/css/bootstrap.min.css">
+    <link media="all" type="text/css" rel="stylesheet"
+          href="https://hocbanglaixe247.com/themes/farmart/fonts/Linearicons/Linearicons/Font/demo-files/demo.css">
+    <link media="all" type="text/css" rel="stylesheet"
+          href="https://hocbanglaixe247.com/themes/farmart/plugins/slick/slick.css">
+    <link media="all" type="text/css" rel="stylesheet"
+          href="https://hocbanglaixe247.com/themes/farmart/plugins/nouislider/nouislider.min.css">
+    <link media="all" type="text/css" rel="stylesheet"
+          href="https://hocbanglaixe247.com/themes/farmart/plugins/light-gallery/css/lightgallery.min.css">
+    <link media="all" type="text/css" rel="stylesheet"
+          href="https://hocbanglaixe247.com/themes/farmart/css/style.css?v=1.1.7">
+
+
+    <link rel="stylesheet" href="asset/fontawesome-6.1.2/css/all.min.css">
+    <link rel="stylesheet" href="asset/css/style.css">
+    <link rel="stylesheet" href="asset/css/responsive.css">
+
+    <script src="asset/js/jquery-3.6.0.min.js"></script>
+    <script src="asset/bootstrap-5.2.0/js/bootstrap.bundle.min.js"></script>
+
+
+    <script src="asset/slick-1.8.1/slick/slick.min.js"></script>
+    <script src="asset/countdown/jquery.datetimepicker.full.min.js"></script>
+    <script src="asset/countdown/jquery.countdown.min.js"></script>
+
+
+</head>
+<body>
+
+<header>
+    <nav class="navbar navbar-expand-lg bg-light nav-app">
+        <div class="container">
+            <div class="wrap-header">
+                <div class="menu-top">
+                    <a class="navbar-brand logo" href="index.html">
+                        <img src="./asset/images/logo.png" alt="">
+                    </a>
+                    <div class="nav-right">
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <a href="" class="btn-auth btn btn-primary">
+                                <img src="./asset/images/icon/user.svg" alt=""> Đăng nhập
+                            </a>
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">
+                                        <img src="./asset/images/icon/img.svg" alt="">
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link">
+                                        <img src="./asset/images/icon/heart.svg" alt="">
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="gio-hang.html" class="nav-link">
+                                        <img src="./asset/images/icon/cart.svg" alt="">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!--nav mobile-->
+                        <div class="dropdown dropdown-mobile">
+                            <button class="navbar-toggler dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                <i class="fa-solid fa-bars"></i>
+                                <i class="fa-solid fa-xmark"></i>
+                            </button>
+                            <div class="dropdown-menu">
+                                <div class="nav-mobile border-top">
+                                    <div class="menu-box">
+                                        <a><i class="fa-solid fa-envelope"></i> tpquynhngan@gmail.com</a>
+                                        <a><i class="fa-solid fa-house"></i> Trang chủ</a>
+                                        <a><i class="fa-solid fa-object-ungroup"></i> Mẫu thiết kế</a>
+                                        <a><i class="fa-solid fa-cart-plus"></i> Giỏ hàng</a>
+                                        <a><i class="fa-solid fa-heart"></i> Yêu thích</a>
+                                        <a><i class="fa-solid fa-arrow-right-from-bracket"></i> Đăng xuất</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-bot">
+                    <div class="wrap-menu-bot">
+                        <div class="menu-bot-item active">
+                            <a href="">Trang chủ</a>
+                        </div>
+                        <div class="menu-bot-item">
+                            <a href="">Mẫu thiết kế</a>
+                        </div>
+                        <div class="menu-bot-item">
+                            <a href="">Trang chủ</a>
+                        </div>
+                    </div>
+                    <form class="form-search" action="">
+                        <div class="input-group">
+                            <span class="input-group-text">
+                                <img src="asset/images/icon/search.svg" alt="">
+                            </span>
+                            <div class="form-floating">
+                                <input type="text" class="form-control" placeholder="Tìm kiếm mẫu mà bạn muốn">
+                            </div>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+
+
+<div class="section-cart py-4">
+    <div class="container">
+        <nav class="breadcrumb-app" aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">Trang chủ</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Giỏ hàng</li>
+            </ol>
+        </nav>
+    </div>
+    <div class="container mb-4">
+        <div class="cart-lst">
+            <div class="cart-item">
+                <div class="img">
+                    <img src="asset/images/sp.png" alt="">
+                </div>
+                <div class="ct">
+                    <div class="ct-left">
+                        <h6 class="title">Ảnh bìa Fanpage Facebook - New Realease</h6>
+                        <span class="text-primary-2 d-block">Ngành dịch vụ</span>
+                        <div class="rate-star mt-1">
+                            <div class="stars">
+                                <i class="fa-solid fa-star text-warning"></i>
+                                <i class="fa-solid fa-star text-warning"></i>
+                                <i class="fa-solid fa-star text-warning"></i>
+                                <i class="fa-solid fa-star text-warning"></i>
+                                <i class="fa-solid fa-star text-warning"></i>
+                            </div>
+                            <span>(50)</span>
+                        </div>
+                        <h6 class="font-weight-normal mt-1">Lượt tải còn lại: <strong>100</strong></h6>
+                    </div>
+                    <div class="ct-right">
+                        <a href="tao-anh.html" class="btn btn-primary">Tạo ảnh</a>
+                    </div>
+                </div>
+            </div>
+            <div class="cart-item">
+                <div class="img">
+                    <img src="asset/images/sp.png" alt="">
+                </div>
+                <div class="ct">
+                    <div class="ct-left">
+                        <h6 class="title">Ảnh bìa Fanpage Facebook - New Realease</h6>
+                        <span class="text-primary-2 d-block">Ngành dịch vụ</span>
+                        <div class="rate-star mt-1">
+                            <div class="stars">
+                                <i class="fa-solid fa-star text-warning"></i>
+                                <i class="fa-solid fa-star text-warning"></i>
+                                <i class="fa-solid fa-star text-warning"></i>
+                                <i class="fa-solid fa-star text-warning"></i>
+                                <i class="fa-solid fa-star text-warning"></i>
+                            </div>
+                            <span>(50)</span>
+                        </div>
+                        <h6 class="font-weight-normal mt-1">Lượt tải còn lại: <strong>100</strong></h6>
+                    </div>
+                    <div class="ct-right">
+                        <a href="tao-anh.html" class="btn btn-primary">Tạo ảnh</a>
+                    </div>
+                </div>
+            </div>
+            <div class="cart-item">
+                <div class="img">
+                    <img src="asset/images/sp.png" alt="">
+                </div>
+                <div class="ct">
+                    <div class="ct-left">
+                        <h6 class="title">Ảnh bìa Fanpage Facebook - New Realease</h6>
+                        <span class="text-primary-2 d-block">Ngành dịch vụ</span>
+                        <div class="rate-star mt-1">
+                            <div class="stars">
+                                <i class="fa-solid fa-star text-warning"></i>
+                                <i class="fa-solid fa-star text-warning"></i>
+                                <i class="fa-solid fa-star text-warning"></i>
+                                <i class="fa-solid fa-star text-warning"></i>
+                                <i class="fa-solid fa-star text-warning"></i>
+                            </div>
+                            <span>(50)</span>
+                        </div>
+                        <h6 class="font-weight-normal mt-1">Lượt tải còn lại: <strong>100</strong></h6>
+                    </div>
+                    <div class="ct-right">
+                        <a href="tao-anh.html" class="btn btn-primary">Tạo ảnh</a>
+                    </div>
+                </div>
+            </div>
+            <div class="cart-item">
+                <div class="img">
+                    <img src="asset/images/sp.png" alt="">
+                </div>
+                <div class="ct">
+                    <div class="ct-left">
+                        <h6 class="title">Ảnh bìa Fanpage Facebook - New Realease</h6>
+                        <span class="text-primary-2 d-block">Ngành dịch vụ</span>
+                        <div class="rate-star mt-1">
+                            <div class="stars">
+                                <i class="fa-solid fa-star text-warning"></i>
+                                <i class="fa-solid fa-star text-warning"></i>
+                                <i class="fa-solid fa-star text-warning"></i>
+                                <i class="fa-solid fa-star text-warning"></i>
+                                <i class="fa-solid fa-star text-warning"></i>
+                            </div>
+                            <span>(50)</span>
+                        </div>
+                        <h6 class="font-weight-normal mt-1">Lượt tải còn lại: <strong>100</strong></h6>
+                    </div>
+                    <div class="ct-right">
+                        <a href="tao-anh.html" class="btn btn-primary">Tạo ảnh</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="section-dk">
+    <div class="container">
+        <div class="box-rv">
+            <div class="rv-item">
+                <img src="./asset/images/icon/license.svg" alt="">
+                <div class="ct">
+                    <h5>1000+</h5>
+                    <small class="d-block">Mẫu thiết kế miễn phí</small>
+                </div>
+            </div>
+            <div class="rv-item">
+                <img src="./asset/images/icon/career.svg" alt="">
+                <div class="ct">
+                    <h5>Đa dạng</h5>
+                    <small class="d-block">Phù hợp đa dạng ngành nghề</small>
+                </div>
+            </div>
+            <div class="rv-item">
+                <img src="./asset/images/icon/sample.svg" alt="">
+                <div class="ct">
+                    <h5>Độc quyền</h5>
+                    <small class="d-block">Thiết kế độc quyền giá rẻ</small>
+                </div>
+            </div>
+        </div>
+        <div class="box-dk">
+            <h4 class="title text-center">Đăng ký thiết kế độc quyền cho thương hiệu</h4>
+            <div class="text-center">Bạn hãy để lại email hoặc số điện thoại, Taoanhnhanh.com sẽ liên hệ lại với để tư
+                vấn trực tiếp một cách chi tiết hơn nhé!
+            </div>
+            <form class="">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Nhập email của bạn">
+                    <button class="btn btn-primary">Đăng ký</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<footer class="footer-app">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-6">
+                <div class="logo-footer">
+                    <img src="./asset/images/logo.png" alt="">
+                </div>
+                <div>We ara a lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                    ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                    nisi ut aliquip ex ea commodo consequat
+                </div>
+                <div class="contact-foot">
+                    <div class="contact-foot-item">
+                        <div class="icon">
+                            <img src="asset/images/icon/call-calling.svg" alt="">
+                        </div>
+                        <div class="ct">
+                            <p class="d-block">Have a question?</p>
+                            <strong class="d-block">012 345 6789</strong>
+                        </div>
+                    </div>
+                    <div class="contact-foot-item">
+                        <div class="icon">
+                            <img src="asset/images/icon/sms.svg" alt="">
+                        </div>
+                        <div class="ct">
+                            <p class="d-block">Contact us at</p>
+                            <strong class="d-block">info@taoanhnhanh.com</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 mt-4 mt-md-0">
+                <h5>Newsletter</h5>
+                <div>Be the first one to know about discounts, offers and events. Unsubscribe whenever you like.</div>
+                <form class="form-send-mail">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Nhập email của bạn">
+                        <button class="btn btn-primary">Đồng ý</button>
+                    </div>
+                </form>
+                <div class="contact-menu-foot">
+                    <a href="">
+                        <img src="./asset/images/icon/facebook.svg" alt="">
+                    </a>
+                    <a href="">
+                        <img src="./asset/images/icon/youtube.svg" alt="">
+                    </a>
+                    <a href="">
+                        <img src="./asset/images/icon/web.svg" alt="">
+                    </a>
+                    <a href="">
+                        <img src="./asset/images/icon/figma.svg" alt="">
+                    </a>
+                    <a href="">
+                        <img src="./asset/images/icon/whatsapp.svg" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+<script src="asset/js/source.js"></script>
+</body>
+</html>
