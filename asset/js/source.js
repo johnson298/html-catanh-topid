@@ -1,41 +1,40 @@
 
-// slide giải mã, đỉnh cao cuộc đời, dự báo thời vận
-const $slideGiaiMa = $(".slider-mobile-only");
-$slideGiaiMa.slick({
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    mobileFirst: true,
-    dots: false,
+// slide-flash
+$('.slide-flash').slick({
+    centerPadding: '60px',
+    slidesToShow: 4,
+    dots: true,
+    prevArrow: '<button class="slick-prev slick-arrow" aria-label="Previous" type="button" style=""><i class="fa-solid fa-angle-left"></i></button>',
+    nextArrow: '<button class="slick-next slick-arrow" aria-label="Next" type="button" style=""><i class="fa-solid fa-angle-right"></i></button>',
     responsive: [
         {
-            breakpoint: 768,
-            settings: 'unslick'
+            breakpoint: 1024,
+            settings: {
+                arrows: false,
+                centerMode: true,
+                centerPadding: '40px',
+                slidesToShow: 2
+            }
+        },
+        {
+            breakpoint: 480,
+            settings: {
+                arrows: false,
+                centerMode: true,
+                centerPadding: '40px',
+                slidesToShow: 1
+            }
         }
-    ],
-    focusOnChange() {
-        console.log('llll')
-    }
-})
-    .init(function() {
-        var currentSlide = $slideGiaiMa.slick('getSlick').getCurrent()
-        var slideCount = $slideGiaiMa.slick("getSlick").getDotCount()
-        $slideGiaiMa.append('<div class="slick-counter">'+ parseInt(currentSlide + 1, 10) +' / '+ slideCount +'</div>')
-    })
-
-$slideGiaiMa.on("afterChange", function(){
-    var currentSlide = $slideGiaiMa.slick('getSlick').getCurrent()
-    var slideCount = $slideGiaiMa.slick("getSlick").getDotCount()
-    $slideGiaiMa.find('.slick-counter').html(currentSlide + 1 +' / '+ slideCount);
+    ]
 });
-
-
-
-
-// slide feedback
-$('#slide-feedback').slick({
-    centerMode: true,
+// slide-feedback
+$('.slide-feedback').slick({
     centerPadding: '60px',
     slidesToShow: 3,
+    dots: true,
+    centerMode: true,
+    prevArrow: '<button class="slick-prev slick-arrow" aria-label="Previous" type="button" style=""><i class="fa-solid fa-angle-left"></i></button>',
+    nextArrow: '<button class="slick-next slick-arrow" aria-label="Next" type="button" style=""><i class="fa-solid fa-angle-right"></i></button>',
     responsive: [
         {
             breakpoint: 1024,
@@ -61,26 +60,17 @@ $('#slide-feedback').slick({
 
 
 
-// slide blog
-$('.slide-blog').slick({
-    centerPadding: '60px',
-    slidesToShow: 1,
-    dots: true
-});
-
-
-// scroll to top
-$(window).scroll(function () {
-    if ($(this).scrollTop() > 50) {
-        $('#back-to-top').fadeIn();
-    } else {
-        $('#back-to-top').fadeOut();
-    }
-});
-// scroll body to 0px on click
-$('#back-to-top').click(function () {
-    $('body,html').animate({
-        scrollTop: 0
-    }, 400);
-    return false;
+// countdown
+$('[data-countdown]').each(function () {
+    var $this = $(this), finalDate = $(this).data('countdown');
+    $this.countdown(finalDate, function (event) {
+        $this.html(event.strftime(`
+        <ul class="cd-result">
+          <li><span class="count-value">%D</span><span class="name">Ngày</span></li>
+          <li><span class="count-value">%H</span><span class="name">Giờ</span></li>
+          <li><span class="count-value">%M</span><span class="name">Phút</span></li>
+          <li><span class="count-value">%S</span><span class="name">Giây</span></li>
+        </ul>
+        `));
+    });
 });
